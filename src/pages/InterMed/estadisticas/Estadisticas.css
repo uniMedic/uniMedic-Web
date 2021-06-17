@@ -1,0 +1,54 @@
+.cuerp{
+    background-color: chartreuse;
+    width: 600px;
+    height: 650px;
+        
+}
+.infoDoc{
+    position: relative;
+    left:50px;
+    bottom: 80px;
+}
+.image{
+   position: relative;
+   
+}
+.PasA{
+background-color: aqua;
+width: 250px;
+height: 200px;
+position: relative;
+left:10px;
+border-radius: 10px;
+}
+.PasE{
+background-color: aqua;
+width: 250px;
+height: 200px;
+position: relative;
+left: 330px;
+bottom: 200px;
+border-radius: 10px;
+}
+.Pima{
+    position: relative;
+    top:80px;
+    right: 130px;
+}
+.Pime{
+    position: relative;
+    top:80px;
+    right: 130px;
+}
+.num{
+    position: relative;
+    top:80px;
+    font-size: 30px;
+    right: 20px;
+}.estadis{
+    background-color: brown;
+    width:915px;
+    position: relative;
+    left:600px;
+    bottom: 300px;
+}

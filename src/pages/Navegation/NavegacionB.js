@@ -29,6 +29,9 @@ const NavegacionB = () => {
                         <li className="nav-item">
                         <Link className="nav-link active" to="/nosotros">Acerca de</Link>
                         </li>
+                        <li className="nav-item">
+                        <Link className="nav-link active" to="/Sesion_Medico">Medico</Link>
+                        </li>
                         
                     </ul>
                 </div>
