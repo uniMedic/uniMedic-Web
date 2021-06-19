@@ -3,11 +3,13 @@ import { Component } from 'react';
 import './Pacientes.css';
 import DataTable from 'react-data-table-component';
 
-function Pascien(nombre,apelli){
+function Pascien(nombre,apelli,Nhis,estado){
     this.nombre=nombre;
     this.apelli=apelli;
+    this.Nhis=Nhis;
+    this.estado=estado;
 }
-var listaPasci=[new Pascien("Andrea","Roman"),new Pascien("Sofia","Romero"),new Pascien("Angel","Bellido"),new Pascien("Carlos","Sanchez"),new Pascien("Juan","Antezana"),new Pascien("Brenda","Pezo"),new Pascien("Janet","Fowier")];
+var listaPasci=[new Pascien("Andrea","Roman",2,"Atendido"),new Pascien("Sofia","Romero",1,"En espera"),new Pascien("Angel","Bellido",3,"En espera"),new Pascien("Carlos","Sanchez",5,"Atendido"),new Pascien("Juan","Antezana",4,"Atendido"),new Pascien("Brenda","Pezo",6,"En espera"),new Pascien("Janet","Fowier",7,"Atendido")];
 
 const columnas=[{
     name: 'Nombres',
@@ -17,6 +19,16 @@ const columnas=[{
 {
     name: 'Apellidos',
     selector: 'apelli',
+    sortable:true
+},
+{
+    name: 'Nro. Historial',
+    selector: 'Nhis',
+    sortable:true
+},
+{
+    name: 'Estado',
+    selector: 'estado',
     sortable:true
 }
 ];
@@ -58,11 +70,10 @@ render(){
     return(
         <div className="Pacien">
             <div className="busc">
-                <input name="busqueda" type="text" placeholder="Buscar..." value={this.state.busqueda} onChange={this.onChange}></input>
-                <button>Buscar</button>
+                <input  className="entradaB" name="busqueda" type="text" placeholder="Buscar..." value={this.state.busqueda} onChange={this.onChange}></input>
             </div>
-            
-        <DataTable
+            <section className="data">
+            <DataTable
         columns={columnas}
         data={this.state.pascien}
         title="Lista de Pacientes"
@@ -70,9 +81,10 @@ render(){
         paginationComponentOptions={paginacionOpciones}
         fixedHeader
         fixedHeaderScrollHeight="300px"
-
         
         />
+            </section>
+        
         </div>
         
     );

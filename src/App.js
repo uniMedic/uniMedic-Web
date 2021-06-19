@@ -11,7 +11,7 @@ import Consultar from './pages/Consultar/Consultar';
 import IntMed from './pages/InterMed/IntMed';
 import Pacientes from './pages/InterMed/pacientes/Pacientes';
 import Estadisticas from './pages/InterMed/estadisticas/Estadisticas';
-
+import DoughnutChart from './pages/InterMed/estadisticas/grafico';
 
 
 
@@ -26,7 +26,7 @@ function App() {
       <Route path="/consultar"  component={Consultar}/>
       <Route path="/modelos"  component={Modelos}/>
       <Route path="/nosotros"  component={Nosotros}/>
-      <Route path="/Sesion_Medico"  component={Estadisticas}/>
+      <Route path="/Sesion_Medico"  component={Login}/>
       
 
       

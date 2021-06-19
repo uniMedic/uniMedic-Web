@@ -1,6 +1,6 @@
 import React from 'react';
 import './Estadisticas.css';
-
+import DoughnutChart from './grafico';
 const Estadisticas=()=>{
     return(
         <div >
@@ -40,6 +40,7 @@ const Estadisticas=()=>{
             </div>
             <div className="estadis">
                 <h1>Estadísticas</h1>
+                <DoughnutChart/>
             </div>
         </div>
     );

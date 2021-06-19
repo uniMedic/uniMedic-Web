@@ -1,5 +1,5 @@
 .cuerp{
-    background-color: chartreuse;
+    background-color: rgb(159, 206, 214);
     width: 600px;
     height: 650px;
         
@@ -46,9 +46,10 @@ border-radius: 10px;
     font-size: 30px;
     right: 20px;
 }.estadis{
-    background-color: brown;
+    background-color: rgb(207, 163, 221);
     width:915px;
+    height: 650px;
     position: relative;
     left:600px;
-    bottom: 300px;
+    bottom: 650px;
 }

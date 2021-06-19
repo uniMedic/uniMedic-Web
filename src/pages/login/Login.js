@@ -41,7 +41,7 @@ const Login= () =>{
             <Title text='Bienvenido'/>
             <img  src={logo}/>
             <div class="form-input-material">
-                <input type="email" name="usuario" id="usuario" placeholder="Ingrese Correo" autocomplete="off" className="form-control-material" required  onChange={handleChange}/>
+                <input type="email" name="usuario" id="usuario" placeholder="Ingrese Correo"  className="form-control-material" required  onChange={handleChange}/>
             </div>
             <div class="form-input-material">
                 <input type="password" name="contraseña" id="contraseña" placeholder="Ingrese Contraseña" autocomplete="off" className="form-control-material" required  onChange={handleChange}/>

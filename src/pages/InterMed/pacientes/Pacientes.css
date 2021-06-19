@@ -1,8 +1,16 @@
 .busc{
     position: relative;
-    top:40px;
+    top:20px;
 }
 .lista{
     position: relative;
     top:70px;
+}
+input.entradaB{
+    border-style: solid;
+    border-color: black;
+}
+.data{
+    position: relative;
+    top:50px;
 }
