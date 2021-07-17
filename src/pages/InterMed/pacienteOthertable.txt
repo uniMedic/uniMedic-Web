@@ -1,0 +1,155 @@
+import React, {useState} from 'react';
+import './Pacientes.css';
+import DataTable from 'react-data-table-component';
+import {Modal,ModalHeader,ModalBody,ModalFooter} from 'reactstrap';
+
+
+var listaPasci=[{
+    btn:<button color="purple" size="sm" id={2} >Ver</button>,
+    nombre:'Andrea',
+    apelli:'Roman',
+    Nhis:2,
+    estado:'Atendido'
+},{
+    btn:<button color="purple" size="sm" id={1}>Ver</button>,
+    nombre:'Sofia',
+    apelli:'Romero',
+    Nhis:1,
+    estado:'En espera'
+
+},{
+    btn:<button color="purple" size="sm" id={3}>Ver</button>,
+    nombre:'Angel',
+    apelli:'Bellido',
+    Nhis:3,
+    estado:'En espera'
+
+},{
+    btn:<button color="purple" size="sm" id={5}>Ver</button>,
+    nombre:'Carlos',
+    apelli:'Sanchez',
+    Nhis:5,
+    estado:'Atendido'
+
+},{
+    btn:<button color="purple" size="sm" id={4}>Ver</button>,
+    nombre:'Juan',
+    apelli:'Antezana',
+    Nhis:4,
+    estado:'Atendido'
+
+},{
+    btn:<button color="purple" size="sm" id={6}>Ver</button>,
+    nombre:'Brenda',
+    apelli:'Pezo',
+    Nhis:6,
+    estado:'En espera'
+
+},{
+    btn:<button color="purple" size="sm" id={7}>Ver</button>,
+    nombre:'Janet',
+    apelli:'Fowier',
+    Nhis:7,
+    estado:'Atendido'
+
+}];
+const columnas=[{
+    name: 'Info',
+    selector: 'btn',
+    sortable: true
+},
+{
+    name: 'Nombres',
+    selector: 'nombre',
+    sortable: true
+},
+{
+    name: 'Apellidos',
+    selector: 'apelli',
+    sortable:true
+},
+{
+    name: 'Nro. Historial',
+    selector: 'Nhis',
+    sortable:true
+},
+{
+    name: 'Estado',
+    selector: 'estado',
+    sortable:true
+}
+];
+const paginacionOpciones={
+    rowsPerPageText: "Filas por Página",
+    rangeSeparatorText: "de",
+    selectAllRowsItem: true,
+    selectAllRowsItemText: 'Todos'
+};
+
+
+
+class Pacientes extends React.Component{
+    constructor(props){
+        super(props);
+        this.state={
+            busqueda:"",
+            pascien:[],
+            abierto:false
+        };
+    }
+    abrirModal=(e)=>{
+        this.setState({abierto: !this.state.abierto});
+        alert(e.target.value);
+    }
+    onChange=async e=>{
+        e.persist();
+        await this.setState({busqueda: e.target.value});
+        this.filtrarElementos();
+    }
+    filtrarElementos=()=>{
+        var search=listaPasci.filter(item=>{
+            if(item.nombre.toString().includes(this.state.busqueda) || item.apelli.toString().includes(this.state.busqueda)){
+                return item;
+            }
+        });
+        this.setState({pascien:search})
+    }
+    componentDidMount(){
+        this.setState({pascien:listaPasci});
+    }
+render(){
+    return(
+        <div className="Pacien">
+            <div className="busc">
+                <input  className="entradaB" name="busqueda"  placeholder="Buscar..." value={this.state.busqueda} onChange={this.onChange}></input><button onClick={this.abrirModal}>click</button>
+            </div>
+            <section className="data">
+            <DataTable
+        columns={columnas}
+        data={<button value={this.state.pascien.Nhis} onClick={this.abrirModal}>Ver</button>,this.state.pascien}
+        title="Lista de Pacientes"
+        pagination
+        paginationComponentOptions={paginacionOpciones}
+        fixedHeader
+        fixedHeaderScrollHeight="300px"
+        />
+            </section>
+        <Modal isOpen={this.state.abierto}>
+            <ModalHeader>Paciente</ModalHeader>
+            <ModalBody>
+                <button>descargar</button> <button>Validar</button>
+            </ModalBody>
+        <ModalFooter>
+            <button  onClick={this.abrirModal}>Cerrar</button>
+        </ModalFooter>
+        </Modal>
+
+        </div>
+        
+    );
+
+}
+    
+    
+}
+export default Pacientes;

@@ -8,10 +8,11 @@ import CreateUser from './pages/createUser/CreateUser';
 import Modelos from './pages/Models/Modelos';
 import Nosotros from './pages/Nosotros/Nosotros';
 import Consultar from './pages/Consultar/Consultar';
-import IntMed from './pages/InterMed/IntMed';
-import Pacientes from './pages/InterMed/pacientes/Pacientes';
+import IntMed from './pages/InterMed/medprueba';
+import { Pacientes } from './pages/InterMed/pacientes/Pacientes';
 import Estadisticas from './pages/InterMed/estadisticas/Estadisticas';
 import DoughnutChart from './pages/InterMed/estadisticas/grafico';
+import Galery from './pages/InterMed/galeria/galery';
 
 
 
@@ -26,10 +27,9 @@ function App() {
       <Route path="/consultar"  component={Consultar}/>
       <Route path="/modelos"  component={Modelos}/>
       <Route path="/nosotros"  component={Nosotros}/>
-      <Route path="/Sesion_Medico"  component={Login}/>
-      
-
-      
+      <Route path="/Sesion_Medico"  component={IntMed}/>  
+    
+  
       </Router>
     </div>
     

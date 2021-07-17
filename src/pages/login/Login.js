@@ -17,7 +17,8 @@ const Login = () => {
 			height: 48,
 			padding: '0 30px',
 			position: 'relative',
-			top: '50px',
+			right:'10px',
+			bottom:'20px',
 			transition: '0.6s'
 		}
 	});
@@ -37,41 +38,18 @@ const Login = () => {
 	return (
 		<div className="login-container">
 			<Title text="Bienvenido" />
-			<img src={logo} />
-			<div class="form-input-material">
-				<input
-					type="email"
-					name="usuario"
-					id="usuario"
-					placeholder="Ingrese Correo"
-					autocomplete="off"
-					className="form-control-material"
-					required
-					onChange={handleChange}
-				/>
-			</div>
-			<div class="form-input-material">
-				<input
-					type="password"
-					name="contraseña"
-					id="contraseña"
-					placeholder="Ingrese Contraseña"
-					autocomplete="off"
-					className="form-control-material"
-					required
-					onChange={handleChange}
-				/>
-			</div>
+			<img className="log" src={logo} />
+            <form>
+            <input type="text" name="usuario" id="usuario" placeholder="Ingrese Usuario"  className="usu"></input><br/>
+            <input type="password" name="contraseña" id="contraseña" placeholder="Ingrese Contraseña" className="usu"></input> 
+            </form>
 			<Button className={stilo.root} variant="outlined" color="primary" href="https://google.com">
 				Ingresar
 			</Button>
             <br/>
             <br/>
-			<GoogleLogin
-				clientId="658977310896-knrl3gka66fldh83dao2rhgbblmd4un9.apps.googleusercontent.com"
-				buttonText="Login"
-				cookiePolicy={'single_host_origin'}
-			/>,
+			
+			
 		</div>
 	);
 };

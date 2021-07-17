@@ -4,20 +4,24 @@
 .pas{
 position: relative;
 text-align: left;
-left: 900px;
+left: 300px;
+top:50px;
 background-color: rgb(231, 119, 75);
-width: 230px;
+width: 200px;
+height: 200px;
 padding-left: 20px;
 border-radius: 20px;
 padding-top: 100px;
+
 }
 .per{
     background-color: rgb(226, 163, 126);
-    width: 230px;
+    width: 200px;
+    height: 200px;
     text-align: left;
     position: relative;
-    left:1200px;
-   bottom: 270px;
+    left: 50px;
+   bottom: 150px;
    padding-left: 20px;
    border-radius: 20px;
    padding-top: 100px;
@@ -30,10 +34,16 @@ padding-top: 100px;
 }
 .labe{
     font-size: 20px;
+    position: relative;
+    bottom: 60px;
+}
+.let{
+    position: relative;
+    bottom: 60px;
 }
 .estadoPas{
     background-color: rgb(133, 67, 219);
-    width: 400px;
+    width: 350px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     position: relative;
@@ -42,28 +52,29 @@ padding-top: 100px;
     height: 50px;
     padding-top: 20px;
     color: white;
-    top: 100px;
+    top:20px;
 }
 .vistaPas{
     position: relative;
     right: 200px;
     top:50px;
     background-color: white;
-    width: 400px;
+    width: 350px;
     left: 100px;
-    top:100px;
-    height: 150px;
+    top:20px;
+    height: 120px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 .images1{
     position:relative;
     top:10px;
-    right: 100px;
+    right: 80px;
+    border-radius: 20px;
 }
 .textV{
     position:relative;
-    right: 80px;
+    right: 70px;
     top:20px;
 }
 .btn{
@@ -72,7 +83,7 @@ padding-top: 100px;
     background-color: rgb(160, 114, 197);
     font-size: 15px;
     height: 30px;
-    left: 90px;
+    left: 70px;
 }
 button:hover{
 background-color: rgb(224, 162, 103);
@@ -84,3 +95,4 @@ background-color: rgb(224, 162, 103);
     width: 1000px;
     left: 300px;
 }
+

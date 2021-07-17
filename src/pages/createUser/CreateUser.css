@@ -1,50 +1,142 @@
-
-.create-user{
+.Cuerpo{
+background-image: url(http://www.petreraldia.com/wp-content/uploads/2009/10/sala-gripe-a-hospital-elda-010.jpg);
+height: 670px;
+}
+.Usuario{
     
+    width: 900px;
     position: relative;
-    top: 50px;
-    left: 550px;
-    background-color: transparent;
-    width: 500px;
+    left: 100px;
     height: 550px;
-    border-color: black;
-    border-radius: 15px;
+    top:50px;
+    border-radius: 10px;
+    background-color: transparent;
     box-shadow: 70px 70px 100px #000;
 }
-.form-input-material {
-    --input-default-border-color: rgb(240, 233, 233);
-    --input-border-bottom-color: rgb(233, 225, 225);
-    margin: 12px 0;
-    
-}
-.form-control-material{
-    border-color: #17c9cf;
-    background: transparent;
-    outline: none;
-    overflow: hidden;
-    
-    
-    
-}
+.in1{
+    position: relative;
+    right:90px;
+    top:50px;
+    border-radius: 5px;
 
-[type=password],
-[type=text],
-[type=email]
-{
-    color:white;
-    display: block;
-  margin: 0 auto;
-  width: 80%;
-  border: 0;
-  border-bottom: 1px solid rgba(7, 7, 7, 0.2);
-  height: 45px;
-  line-height: 45px;  
-  margin-bottom: 10px;
-  font-size: 1em;
-  box-sizing: border-box;
-  
 }
-
+.l1{
+position: relative;
+right:240px;
+top:50px;
+}
+.in2{
+    position: relative;
+    right:165px;
+    top:50px;
+    border-radius: 5px;
+}
+.l3{
+    position: relative;
+    right:230px;
+    top:50px;
+}
+.in3{
+    position: relative;
+    right:205px;
+    top:50px;
+    border-radius: 5px;
+}
+.l5{
+    position: relative;
+    right:255px;
+    top:50px;
+}
+.in4{
+    position: relative;
+    right:168px;
+    top:50px;
+    border-radius: 5px;
+}
+.l7{
+    position: relative;
+    right:265px;
+    top:50px;
+}
+.in5{
+    position: relative;
+    right:275px;
+    top:50px;
+    border-radius: 5px;
+}
+.l9{
+    position: relative;
+    right:303px;
+    top:50px;
+}
+.in6{
+    position: relative;
+    right:275px;
+    top:50px;
+    border-radius: 5px;
+    
+}
+.l10{
+    position: relative;
+    right:345px;
+    top:50px;
+}
+.in7{
+    position: relative;
+    left: 50px;
+    top: 100px;
+    border-radius: 5px;
+}
+.l2{
+    position: relative;
+    
+    top: 100px;
+}
+.in8{
+    position:relative;
+    left: 50px;
+    top: 100px;
+    border-radius: 5px;
+}
+.l11{
+    position:relative;
+    left: 50px;
+    top: 100px;
+}
+.in9{
+    position:relative;
+    top: 100px;
+    right: 10px;
+    border-radius: 5px;
+}
+.l4{
+    position:relative;
+    top: 100px;
+    left: 5px;
+}
+.in10{
+    position:relative;
+    top: 100px;
+    left: 28px;
+    border-radius: 5px;
+    
+}
+.l6{
+    position:relative;
+    top: 100px;
+    right:45px;
+}
+.in11{
+    position:relative;
+    top: 100px;
+    right: 10px;
+    border-radius: 5px;
+}
+.l8{
+    position:relative;
+    top: 100px;
+    left: 20px;
+}
 ::-moz-placeholder {
     color: black;
     font-family: Arial;
@@ -57,6 +149,21 @@
         font-size: 16px;
         font-weight: bold;
         }
+.tit{
+    position: relative;
+    font-size: 30px;
+    top:10px;
+    right: 50px;
+    color: blanchedalmond;
+
+}
+.b{
+    border-radius: 5px;
+    position: relative;
+    left: 100px;
+    bottom: 20px;
+    box-shadow: 0 3px 5px 2px rgba(255, 105, 135, .3);
+}
 .icono{
     position: relative;
     top: 200px;

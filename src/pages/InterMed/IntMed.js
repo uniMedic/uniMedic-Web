@@ -1,12 +1,13 @@
-import React from 'react';
+import {React,useState} from 'react';
 import './IntMed.css';
 import {BrowserRouter as Router,Route, Switch, Link } from 'react-router-dom';
 import Tit from './Componets/titulo/Tit';
-import Pacientes from './pacientes/Pacientes';
+import {Pacientes} from './pacientes/Pacientes';
 import Estadisticas from './estadisticas/Estadisticas';
-
+import Galery from './galeria/galery';
 
 const IntMed=()=>{
+    //const [cantidad,setCantidad]=useState(0);
 
     return(
         <div className="Medico">
@@ -20,7 +21,7 @@ const IntMed=()=>{
             <label>Paciente en observación</label>
         </div>
         <div className="vistaPas">
-        <img src="https://cdn.onlinewebfonts.com/svg/img_299586.png" 
+        <img src="https://www.media1.hw-static.com/wp-content/uploads/40017678.jpg" 
                    height="40px" 
                    width="40px" 
                    className="images1"
@@ -28,35 +29,35 @@ const IntMed=()=>{
         <label className="textV">Andrea <br/>Roman</label>
         <button className="btn">continuar</button>
         </div>
-            
                <section className="pas">
                
             <img src="https://image.flaticon.com/icons/png/512/1177/1177577.png" 
-                   height="100px" 
-                   width="100px" 
+                   height="80px" 
+                   width="80px" 
                    className="images"
                    ></img><br/>
             
-                <label className="labe"><Link to ="/pacientes">+Pacientes</Link></label><br/>
-                <label>Registro</label>
-               </section>
+                <label className="labe"><Link to ="/pacientes_1">+Pacientes</Link></label><br/>
+                <label className="let">Registro</label>
+               </section >
                <section className="per">
                <img src="http://blogs.ubc.ca/victorcastillo/files/2014/10/analisis.png" 
-                   height="100px" 
-                   width="100px" 
+                   height="80px" 
+                   width="80px" 
                    className="images"
                    ></img><br/>
                    
-                <label className="labe"><Link to ="/estadisticas">Performance</Link></label><br/>
-                <label>Observa tu estadística</label>
+                <label className="labe"><Link to ="/estadisticas_2">+Performance</Link></label><br/>
+                <label className="let">Observa tu estadística</label>
                </section>
+               <Galery/>
             </div>
 <Router>
       <Switch>
-          <Route path="/pacientes">
+          <Route path="/pacientes_1">
             <Pacientes/>
           </Route>
-          <Route path="/estadisticas">
+          <Route path="/estadisticas_2">
             <Estadisticas/>
           </Route>
       </Switch>

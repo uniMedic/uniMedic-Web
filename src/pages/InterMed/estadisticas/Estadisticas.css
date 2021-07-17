@@ -7,10 +7,11 @@
 .infoDoc{
     position: relative;
     left:50px;
-    bottom: 80px;
+    bottom: 100px;
 }
 .image{
    position: relative;
+   border-radius: 90px;
    
 }
 .PasA{
@@ -52,4 +53,21 @@ border-radius: 10px;
     position: relative;
     left:600px;
     bottom: 650px;
+}
+.gra1{
+    position: relative;
+    left:150px;
+}
+.gra2{
+    position: relative;
+    right:80px;
+}
+.gra3{
+    position: relative;
+    left:400px;
+    bottom: 200px;
+}
+.h4{
+    position: relative;
+    right: 150px;
 }

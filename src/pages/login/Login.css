@@ -14,21 +14,32 @@
     border-radius: 5px;
     box-shadow: 70px 70px 100px #000;
 }
-.form-input-material{
-color: white;
+.usu{
+    position: relative;
+    bottom: 30px;
+    color: black;
+    border-style: solid;
+    border-color: black;
 }
-.form-control-material{
-color: white;
+.googleB{
+    position: relative;
+    top:7px;
+    box-shadow: 70px 70px 100px #000;
+    border-radius: 10px;
 }
 ::-moz-placeholder {
-    color:white;
+    color:black;
     font-family: Arial;
     font-size: 16px;
     font-weight: bold;
     }
     ::-webkit-input-placeholder {
-        color: white;
+        color: black;
         font-family: Arial;
         font-size: 16px;
         font-weight: bold;
         }
+.log{
+    position: relative;
+    bottom: 50px;
+}

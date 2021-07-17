@@ -13,4 +13,12 @@ input.entradaB{
 .data{
     position: relative;
     top:50px;
+    width: 1200px;
+    left:150px;
+}
+.Pacien{
+    background-color: rgb(179, 128, 226);
+}
+.boton{
+    border-radius: 5px;
 }
